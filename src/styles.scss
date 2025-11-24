@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.toast-title {
+    @apply font-bold;
+}
+
+.toast-message {
+    @apply text-sm;
+}
+
+/* ensure toastr appears above everything */
+#toast-container {
+    z-index: 999999;
+    position: fixed !important;
+}
+
+#toast-container>div {
+    padding: 12px 16px !important;
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row-reverse;
+}
+
+/* restore bootstrap-like positioning */
+.toast-top-right {
+    top: 1rem;
+    right: 1rem;
+}
+
+.toast-bottom-right {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+#toast-container>div {
+    @apply shadow-xl rounded-lg;
+}
+
+/* SUCCESS */
+.toast-success {
+    background-color: #16a34a !important;
+    /* Tailwind green-600 */
+    color: white !important;
+}
+
+/* ERROR */
+.toast-error {
+    background-color: #dc2626 !important;
+    /* Tailwind red-600 */
+    color: white !important;
+}
+
+/* WARNING */
+.toast-warning {
+    background-color: #f59e0b !important;
+    /* Tailwind amber-500 */
+    color: black !important;
+}
+
+/* INFO */
+.toast-info {
+    background-color: #0ea5e9 !important;
+    /* Tailwind sky-500 */
+    color: white !important;
+}

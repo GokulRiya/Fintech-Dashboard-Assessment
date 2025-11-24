@@ -1,0 +1,197 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "test@finedge.com",
+      "password": "123456"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "a680",
+      "date": "",
+      "type": "",
+      "amount": "",
+      "description": "",
+      "status": "Pending"
+    },
+    {
+      "id": "7dca",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "3c33",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "1e62",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "d8ef",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "060f",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "73ac",
+      "date": "2025-11-24",
+      "type": "Credit",
+      "amount": null,
+      "description": "asasd",
+      "status": "Pending"
+    },
+    {
+      "id": "c889",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "057b",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "f079",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "923e",
+      "date": null,
+      "type": null,
+      "amount": null,
+      "description": null,
+      "status": null
+    },
+    {
+      "id": "311c",
+      "date": "2025-11-24",
+      "type": "Credit",
+      "amount": "",
+      "description": "",
+      "status": "Pending"
+    },
+    {
+      "id": "8681",
+      "date": "2025-11-21",
+      "type": "Credit",
+      "amount": 4500,
+      "description": "tresr",
+      "status": "Success"
+    },
+    {
+      "id": "be34",
+      "date": "2025-11-26",
+      "type": "Credit",
+      "amount": 23,
+      "description": "testing",
+      "status": "Pending"
+    },
+    {
+      "id": "5c6e",
+      "date": "2025-11-25",
+      "type": "Debit",
+      "amount": 1000,
+      "description": "send to tea shop",
+      "status": "Success"
+    },
+    {
+      "id": "9455",
+      "date": "2025-11-24",
+      "type": "Credit",
+      "amount": 24,
+      "description": "testing method",
+      "status": "Pending"
+    },
+    {
+      "id": "02fc",
+      "date": "",
+      "type": "Credit",
+      "amount": "",
+      "description": "",
+      "status": "Pending"
+    },
+    {
+      "id": "fb70",
+      "date": "2025-11-24",
+      "type": "Credit",
+      "amount": 10000,
+      "description": "testing 1",
+      "status": "Pending"
+    },
+    {
+      "id": "7e73",
+      "date": "",
+      "type": "Credit",
+      "amount": "",
+      "description": "",
+      "status": "Pending"
+    },
+    {
+      "id": "dc2e",
+      "date": "",
+      "type": "Credit",
+      "amount": "",
+      "description": "",
+      "status": "Pending"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "8fc8",
+      "fromAccount": "123456",
+      "toAccount": "7891011",
+      "amount": 12000,
+      "remarks": "test",
+      "status": "Failed"
+    },
+    {
+      "id": "2c71",
+      "fromAccount": "22110099",
+      "toAccount": "12345678",
+      "amount": 10000,
+      "remarks": "Testing one",
+      "status": "Failed"
+    },
+    {
+      "id": "32ef",
+      "fromAccount": "342342",
+      "toAccount": "32423",
+      "amount": 3000,
+      "remarks": "res",
+      "status": "Pending"
+    }
+  ]
+}

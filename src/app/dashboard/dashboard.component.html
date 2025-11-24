@@ -1,0 +1,30 @@
+<div class="m-5">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800"></h2>
+    <p>
+        <mat-toolbar class="flex items-center">
+            <span>Dashboard</span>
+        </mat-toolbar>
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+        <div
+            class="p-6 rounded-2xl shadow-md bg-white border border-gray-200 hover:shadow-lg hover:bg-gray-100 hover:cursor-pointer hover:border-black transition-all">
+            <p class="text-gray-500 text-sm">Total Balance</p>
+            <h1 class="text-2xl font-semibold text-green-600 mt-2">₹{{ totalBalance }}</h1>
+        </div>
+
+        <div class="p-6 rounded-2xl shadow-md bg-white border border-gray-200 hover:shadow-lg hover:bg-gray-100 hover:cursor-pointer hover:border-black transition-all"
+            routerLink="/transactions">
+            <p class="text-gray-500 text-sm">Total Transactions</p>
+            <h1 class="text-2xl font-semibold text-blue-600 mt-2">{{ totalTransactions }}</h1>
+        </div>
+
+        <div  routerLink="/transfers"
+            class="p-6 rounded-2xl shadow-md bg-white border border-gray-200 hover:shadow-lg hover:bg-gray-100 hover:cursor-pointer hover:border-black transition-all">
+            <p class="text-gray-500 text-sm">Pending Transfers</p>
+            <h1 class="text-2xl font-semibold text-yellow-600 mt-2">{{ pendingTransfers }}</h1>
+        </div>
+
+    </div>
+
+</div>

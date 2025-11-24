@@ -1,0 +1,96 @@
+<div class="m-5">
+    <div class="flex items-center">
+        <span class="text-blue-600 hover:underline ml-2 cursor-pointer" routerLink="/dashboard">
+            < Back</span>
+    </div>
+    <div class="flex justify-between items-center">
+        <span class="text-xl font-bold text-gray-800">Transfers Listing</span>
+        <div>
+            <mat-form-field appearance="standard" class="mr-2">
+                <mat-label>Search</mat-label>
+                <input matInput (keyup)="applyFilter($event)" placeholder="Ex. 12345678" #input>
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="px-6 py-2 rounded-lg" (click)="addTransfers()">
+                Add New Transfer
+            </button>
+        </div>
+
+    </div>
+
+    <div class="overflow-x-auto bg-white rounded-xl shadow-md border border-gray-200 mt-2">
+        <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+
+        <table mat-table [dataSource]="dataSource" class="min-w-full">
+
+
+            <ng-container matColumnDef="fromaccount">
+                <th mat-header-cell *matHeaderCellDef class="text-gray-600 font-semibold py-3 pl-3">
+                    From Account
+                </th>
+                <td mat-cell *matCellDef="let t" class="py-3 pl-3">
+                    {{ t.fromAccount }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="toaccount">
+                <th mat-header-cell *matHeaderCellDef class="text-gray-600 font-semibold py-3 pl-3">
+                    To Account
+                </th>
+                <td mat-cell *matCellDef="let t" class="py-3 font-medium">
+                    {{ t.toAccount }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="amount">
+                <th mat-header-cell *matHeaderCellDef class="text-gray-600 font-semibold py-3 pl-3">
+                    Amount
+                </th>
+                <td mat-cell *matCellDef="let t" class="py-3 pl-3">
+                    ₹{{ t.amount }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="remarks">
+                <th mat-header-cell *matHeaderCellDef class="text-gray-600 font-semibold py-3 pl-3">
+                    Remarks
+                </th>
+                <td mat-cell *matCellDef="let t" class="py-3 pl-3">
+                    {{ t.remarks }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef class="text-gray-600 font-semibold py-3 pl-3">
+                    Status
+                </th>
+                <td mat-cell *matCellDef="let t" class="py-3 pl-3">
+                    <span class="px-3 py-1 text-white rounded-full text-sm" [ngClass]="{
+            'bg-yellow-500': t.status === 'Pending',
+            'bg-green-600': t.status === 'Completed',
+            'bg-red-600': t.status === 'Failed'
+          }">
+                        {{ t.status }}
+                    </span>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef class="text-gray-600 font-semibold py-3 pl-3">
+                    Actions
+                </th>
+                <td mat-cell *matCellDef="let t" class="py-3 pl-3">
+                    <button (click)="changeStatus(t.id, 'Completed')" mat-raised-button class="mx-2">Complete</button>
+                    <button (click)="changeStatus(t.id, 'Failed')"  mat-raised-button class="mx-2">Fail</button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="hover:bg-gray-50"></tr>
+            <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="6">No records found</td>
+            </tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[10, 25, 50, 100]" aria-label="Select page of users"></mat-paginator>
+    </div>
+</div>
