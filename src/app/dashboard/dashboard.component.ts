@@ -20,11 +20,11 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
 
     this.service.getAll().subscribe(res => {
-      this.pendingTransfers = res.length;   // updates table automatically
+      this.pendingTransfers = res.length;
     });
 
     this.txService.getAll().subscribe(res => {
-      this.totalTransactions = res.length;   // updates table automatically
+      this.totalTransactions = res.length;
     });
   }
 

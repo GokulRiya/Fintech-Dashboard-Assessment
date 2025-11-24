@@ -35,8 +35,7 @@ export class TransfersComponent implements OnInit {
   load() {
     this.isLoading = true;
     this.service.getAll().subscribe(res => {
-      console.log(res)
-      this.dataSource.data = res;   // updates table automatically
+      this.dataSource.data = res;
       this.isLoading = false;
     });
   }
@@ -66,7 +65,6 @@ export class TransfersComponent implements OnInit {
   }
 
   addTransfers() {
-    console.log(this.form.value)
     const dialogRef = this.dialog.open(AddTransferDialogComponent, {
       width: '400px',
       height: '500px',
@@ -76,7 +74,7 @@ export class TransfersComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      this.load();  // refresh your mat-table
+      this.load();
     });
 
   }

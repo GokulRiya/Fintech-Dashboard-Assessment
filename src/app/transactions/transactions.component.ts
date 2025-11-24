@@ -26,7 +26,7 @@ export class TransactionsComponent implements OnInit {
   loadData() {
     this.isLoading = true;
     this.txService.getAll().subscribe(res => {
-      this.dataSource.data = res;   // updates table automatically
+      this.dataSource.data = res;
       this.isLoading = false;
     });
   }
