@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TransfersService } from '../transfer.service';
 import { TransactionsService } from '../transactions.service';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/auth/auth.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,7 +17,9 @@ export class DashboardComponent implements OnInit {
 
   chartData = [12000, 15000, 9000, 18000, 22000, 14000];
   chartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
-  constructor(private service: TransfersService, private txService: TransactionsService,) { }
+  constructor(private service: TransfersService, private txService: TransactionsService,
+    private router: Router,private auth:AuthService
+  ) { }
 
   ngOnInit(): void {
 
@@ -28,4 +32,7 @@ export class DashboardComponent implements OnInit {
     });
   }
 
+  logout() {
+ this.auth.logout()
+  }
 }

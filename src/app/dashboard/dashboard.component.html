@@ -1,8 +1,9 @@
 <div class="m-5">
     <h2 class="text-2xl font-bold mb-6 text-gray-800"></h2>
     <p>
-        <mat-toolbar class="flex items-center">
+        <mat-toolbar class="flex items-center justify-between">
             <span>Dashboard</span>
+            <mat-icon class="cursor-pointer" (click)="logout()" matTooltip="Log out">exit_to_app</mat-icon>
         </mat-toolbar>
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">

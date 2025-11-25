@@ -9,98 +9,98 @@
   "transactions": [
     {
       "id": "a680",
-      "date": "",
-      "type": "",
-      "amount": "",
-      "description": "",
+      "date": "2025-11-25",
+      "type": "Credit",
+      "amount": 1000,
+      "description": "Testing amount",
       "status": "Pending"
     },
     {
       "id": "7dca",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "3c33",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "1e62",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "d8ef",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "060f",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "73ac",
       "date": "2025-11-24",
       "type": "Credit",
-      "amount": null,
+      "amount": 100,
       "description": "asasd",
       "status": "Pending"
     },
     {
       "id": "c889",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "057b",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "f079",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "923e",
-      "date": null,
-      "type": null,
-      "amount": null,
-      "description": null,
-      "status": null
+      "date": "2025-11-24",
+      "type": "Debit",
+      "amount": 100,
+      "description": "testing",
+      "status": "Success"
     },
     {
       "id": "311c",
       "date": "2025-11-24",
       "type": "Credit",
-      "amount": "",
-      "description": "",
+      "amount": 1000,
+      "description": "Testing amount",
       "status": "Pending"
     },
     {
@@ -137,10 +137,10 @@
     },
     {
       "id": "02fc",
-      "date": "",
+      "date": "2025-11-25",
       "type": "Credit",
-      "amount": "",
-      "description": "",
+      "amount": 1000,
+      "description": "Testing amount",
       "status": "Pending"
     },
     {
@@ -153,19 +153,27 @@
     },
     {
       "id": "7e73",
-      "date": "",
+      "date": "2025-11-25",
       "type": "Credit",
-      "amount": "",
-      "description": "",
+      "amount": 20000,
+      "description": "Testing amount",
       "status": "Pending"
     },
     {
       "id": "dc2e",
-      "date": "",
+      "date": "2025-11-25",
       "type": "Credit",
-      "amount": "",
-      "description": "",
+      "amount": 200,
+      "description": "Testing amount",
       "status": "Pending"
+    },
+    {
+      "id": "da2a",
+      "date": "2025-11-26",
+      "type": "Credit",
+      "amount": 3000,
+      "description": "tested",
+      "status": "Failed"
     }
   ],
   "transfers": [
@@ -175,7 +183,7 @@
       "toAccount": "7891011",
       "amount": 12000,
       "remarks": "test",
-      "status": "Failed"
+      "status": "Completed"
     },
     {
       "id": "2c71",
@@ -191,6 +199,14 @@
       "toAccount": "32423",
       "amount": 3000,
       "remarks": "res",
+      "status": "Completed"
+    },
+    {
+      "id": "db43",
+      "fromAccount": "1234",
+      "toAccount": "5678",
+      "amount": 1000,
+      "remarks": "Tested",
       "status": "Pending"
     }
   ]
